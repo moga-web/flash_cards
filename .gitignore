@@ -1,4 +1,11 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# 1. ルートディレクトリに移動
+cd /path/to/your/project
+
+# 2. 新しい .gitignore ファイルを作成
+touch .gitignore
+
+# 3. 統合された内容をファイルに追加
+echo "# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
 /node_modules
@@ -71,8 +78,4 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
-!.vscode/extensions.json
-
-# TypeScript
-*.tsbuildinfo
-next-env.d.ts
+!.vscode/extensions.json" > .gitignore
